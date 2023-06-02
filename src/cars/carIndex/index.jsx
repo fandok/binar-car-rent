@@ -31,37 +31,34 @@ const CarIndex = (props) => {
           {props.data.cars !== undefined &&
             props.data.cars.map((result) => {
               return (
-                <>
-                  <Col
-                    xs={12}
-                    sm={8}
-                    md={6}
-                    lg={6}
-                    xl={4}
-                    className="mx-auto mt-4"
-                  >
-                    <Card className="mx-auto w-100">
-                      <Card.Img variant="top" height={200} src={result.image} />
-                      <Card.Body>
-                        <Card.Subtitle className="mb-2 text-muted">
-                          {result.name}
-                        </Card.Subtitle>
-                        <Card.Title>
-                          {formatRupiah(result.price)}/Hari
-                        </Card.Title>
-                        <Card.Text>
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </Card.Text>
-                        <Link to={`${result.id}`}>
-                          <Button className="w-100 py-3" variant="primary">
-                            Pilih Mobil
-                          </Button>
-                        </Link>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </>
+                <Col
+                  key={result.id}
+                  xs={12}
+                  sm={8}
+                  md={6}
+                  lg={6}
+                  xl={4}
+                  className="mx-auto mt-4"
+                >
+                  <Card className="mx-auto w-100">
+                    <Card.Img variant="top" height={200} src={result.image} />
+                    <Card.Body>
+                      <Card.Subtitle className="mb-2 text-muted">
+                        {result.name}
+                      </Card.Subtitle>
+                      <Card.Title>{formatRupiah(result.price)}/Hari</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </Card.Text>
+                      <Link to={`${result.id}`}>
+                        <Button className="w-100 py-3" variant="primary">
+                          Pilih Mobil
+                        </Button>
+                      </Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
               );
             })}
         </Row>

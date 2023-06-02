@@ -18,7 +18,7 @@ const SidebarNav = () => {
               </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
+            {/* <Navbar.Offcanvas
               className="offCanvas"
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -49,7 +49,7 @@ const SidebarNav = () => {
                   ></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
-            </Navbar.Offcanvas>
+            </Navbar.Offcanvas> */}
           </Container>
         </Navbar>
       ))}
