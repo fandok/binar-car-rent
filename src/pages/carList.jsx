@@ -10,10 +10,10 @@ const CarListPage = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    getData()
+    getData();
   }, []);
 
-  const getData = (params={}) =>{
+  const getData = (params = {}) => {
     axios
       .get("https://bootcamp-rent-cars.herokuapp.com/customer/v2/car", {
         params,
@@ -21,12 +21,11 @@ const CarListPage = () => {
       .then((res) => {
         setData(res.data);
       });
-} 
-
-  const filterForm = (params) => {
-    getData(params)
   };
 
+  const filterForm = (params) => {
+    getData(params);
+  };
 
   return (
     <>
@@ -38,4 +37,5 @@ const CarListPage = () => {
     </>
   );
 };
+
 export default CarListPage;

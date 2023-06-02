@@ -54,5 +54,8 @@
         "statements": 90
       }
     }
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.21.4"
   }
 }

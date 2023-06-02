@@ -1,13 +1,13 @@
-.titleBrand{
-    background-color: #0D28A6;
-    border: none !important;   
-    color: #0D28A6;
+.titleBrand {
+  background-color: #0d28a6;
+  border: none !important;
+  color: #0d28a6;
 }
 
-.offCanvas{
-    width: 250px !important;
+.offCanvas {
+  width: 250px !important;
 }
 
-.navbar{
-    background-color: #F1F3FF;
+.Navbar {
+  background-color: #f1f3ff;
 }
